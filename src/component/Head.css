@@ -1,0 +1,24 @@
+/* Palet Colours*/
+
+:root {
+    --turquoise: #25c4d8;
+    --light-grey: #f2f2f2;
+    --shadow: #d7d7d7;
+    --white: #ffffff;
+    --grey: #b9b9b9;
+    --black: #000;
+    --yellow: #ffc404;
+  }
+
+.logo {
+    width: 200px;
+    margin: 20px;
+}
+
+box-icon {
+    cursor: pointer;
+}
+
+box-icon:hover {
+    color: var(--yellow);
+}

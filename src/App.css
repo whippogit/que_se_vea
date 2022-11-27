@@ -1,0 +1,26 @@
+/* Palet Colours*/
+
+:root {
+  --turquoise: #25c4d8;
+  --light-grey: #f2f2f2;
+  --shadow: #d7d7d7;
+  --white: #ffffff;
+  --grey: #b9b9b9;
+  --black: #000;
+  --yellow: #ffc404;
+  --strong-grey: #808080;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  margin: 3px;
+}
+
+
