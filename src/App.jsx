@@ -8,6 +8,7 @@ import Head from "./component/Head";
 import NavBar from "./component/NavBar";
 import PageNotFound from "./component/PageNotFound";
 import Social from "./component/Social";
+import BannerMain from "./component/BannerMain";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -27,8 +28,8 @@ function App() {
         <NavBar />
       </div>
       <hr />
-      <div className="bg-light">
-        <div className="container d-flex justify-content-center bg-light"></div>
+      <div className="container">
+        <BannerMain />
       </div>
 
       <Router>

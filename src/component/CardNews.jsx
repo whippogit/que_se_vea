@@ -9,7 +9,7 @@ function CardNews({ news }) {
           to={"/new/" + newsapi._id + newsapi.title}
           key={newsapi._id}
           title={newsapi.title}
-          className="cardContainer"
+          className="cardContainer align-top"
         >
           <img src={newsapi.image_url} alt={newsapi.title} />
           <div className="categoria">
