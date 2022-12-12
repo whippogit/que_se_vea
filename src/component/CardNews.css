@@ -49,9 +49,6 @@ h6 {
   text-decoration: underlines;
 }
 
-p {
-  margin: 1rem;
-}
 
 .titulo {
   margin: 1rem;
@@ -60,27 +57,27 @@ p {
 }
 
 .footer-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 10px;
 }
 
-.footer-card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  padding: 1rem;
-}
 
 .date {
   display: flex;
   justify-content: right;
   color: var(--grey);
   margin: 1rem;
+  font-size: 14px;
+  
 }
 
 .by {
   margin: auto;
+  font-size: 14px;
+  color: #b9b9b9;
+}
+
+.description {
+  color: dimgrey;
   font-size: 14px;
 }
 

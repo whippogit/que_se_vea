@@ -8,14 +8,14 @@ function PageDetails() {
   const { id } = useParams();
 
   useEffect(() => {
-    Api.getNewsByFlightNumber(id).then(setNewId).catch(console.log);
+    Api.getNewsByTitle(id).then(setNewId).catch(console.log);
   }, [id]);
 
   return (
     <div className="container text-center">
-      <h1>{newId.mission_name}</h1>
-      <h4>{newId.launch_year}</h4>
-      <h4>{newId.launch_date_local}</h4>
+      <h1>{newId.title}</h1>
+      <h4>{newId.description}</h4>
+      <h4>{newId.category}</h4>
     </div>
   );
 }

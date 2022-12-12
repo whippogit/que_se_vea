@@ -1,4 +1,4 @@
-const Api = "https://rickandmortyapi.com/api/character";
+const Api = "http://localhost:3000/api";
 
 export async function getAllNews() {
   try {
@@ -11,9 +11,9 @@ export async function getAllNews() {
   }
 }
 
-export async function getNewsByFlightNumber(flightNumber) {
+export async function getNewsByTitle(title) {
   try {
-    const response = await fetch(`${Api}/${flightNumber}`);
+    const response = await fetch(`${Api}/${title}`);
     const data = await response.json();
     return data;
   } catch (error) {

@@ -3,29 +3,31 @@ import { Link } from "react-router-dom";
 
 function CardNews({ news }) {
   return (
-    <>
-      <div className="container">
+    <div className="container">
+      <div>
         {news.map((newsapi) => (
           <Link
-            to={"/new/" + newsapi.id + newsapi.name}
-            key={newsapi.name}
-            title={newsapi.name}
+            to={"/new/" + newsapi._id + newsapi.title}
+            key={newsapi._id}
+            title={newsapi.title}
             className="cardContainer"
           >
-            <img src={newsapi.image} alt={newsapi.name}/>
+            <img src={newsapi.image_url} alt={newsapi.title} />
             <div className="categoria">
-              <h6>{newsapi.species}</h6>
+              <h6>{newsapi.category}</h6>
             </div>
-            <div className="titulo">{newsapi.name}</div>
+            <div className="titulo">{newsapi.title}</div>
+            <p className="description">{newsapi.description}</p>
             <div className="footer-card">
-              <img src="src/img/rickandmorty.png" alt={newsapi.name} />
-              <div className="by">{newsapi.status}</div>
+              
+              <div className="by">Dirección de Información Pública</div>
             </div>
-            <div className="date">{newsapi.created}</div>
+            <div className="date">11 de Diciembre 2022</div>
           </Link>
-        ))}
+        ))},
+        
       </div>
-    </>
+    </div>
   );
 }
 
