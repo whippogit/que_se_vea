@@ -21,6 +21,11 @@ a {
   color: var(--black);
 }
 
+.description {
+  color: dimgrey;
+  font-size: 14px;
+}
+
 a:hover {
   cursor: pointer;
   color: var(--yellow);
@@ -49,7 +54,6 @@ h6 {
   text-decoration: underlines;
 }
 
-
 .titulo {
   margin: 1rem;
   font-size: 20px;
@@ -60,25 +64,18 @@ h6 {
   margin: 10px;
 }
 
-
 .date {
   display: flex;
   justify-content: right;
   color: var(--grey);
   margin: 1rem;
   font-size: 14px;
-  
 }
 
 .by {
   margin: auto;
   font-size: 14px;
   color: #b9b9b9;
-}
-
-.description {
-  color: dimgrey;
-  font-size: 14px;
 }
 
 .my-masonry-grid {
@@ -94,7 +91,8 @@ h6 {
 }
 
 /* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
   background: grey;
   margin-bottom: 30px;
 }
