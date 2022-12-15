@@ -5,7 +5,7 @@ export async function getAllNews() {
     const response = await fetch(`${Api}`);
     const data = await response.json();
     console.log(data.results);
-    return data.results;
+    return data.results.reverse();
   } catch (error) {
     console.log(error);
   }

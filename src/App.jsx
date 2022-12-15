@@ -19,15 +19,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="container d-flex justify-content-between">
-        <Head />
-        <Social />
-      </h1>
-      <hr />
-      <div className="container-fluid">
-        <NavBar />
+      <div className="position-sticky">
+        <h1 className="container d-flex justify-content-between">
+          <Head />
+          <Social />
+        </h1>
+        <hr />
+        <div className="container-fluid">
+          <NavBar />
+        </div>
+        <hr />
       </div>
-      <hr />
       <div className="container">
         <BannerMain />
       </div>
