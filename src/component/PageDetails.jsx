@@ -13,9 +13,8 @@ function PageDetails() {
 
   return (
     <div className="container text-center">
-      <h1>{newId.title}</h1>
-      <h4>{newId.description}</h4>
-      <h4>{newId.category}</h4>
+      <h1>Título</h1>
+      
     </div>
   );
 }

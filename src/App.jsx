@@ -10,6 +10,7 @@ import PageNotFound from "./component/PageNotFound";
 import Social from "./component/Social";
 import BannerMain from "./component/BannerMain";
 import BannerLeft from "./component/BannerLeft";
+import Slider from "./component/Slider";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -30,6 +31,10 @@ function App() {
       </div>
       <hr />
       <div className="container">
+        <Slider />
+      </div>
+
+      <div className="container">
         <BannerMain />
       </div>
 
@@ -37,7 +42,7 @@ function App() {
         <div className="col-2">
           <h1>hola</h1>
         </div>
-        <div className="col-8">
+        <div className="col-7">
           <Router>
             <Routes>
               <Route path="/" element={<CardNews news={news} />} />
@@ -46,7 +51,7 @@ function App() {
             </Routes>
           </Router>
         </div>
-        <div className="col-2">
+        <div className="col-3">
           <BannerLeft />
         </div>
       </div>

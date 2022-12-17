@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CardNews({ news }) {
   return (
-    <div className="container">
+    <div className="container p-0">
       {news.map((newsapi) => (
         <Link
           to={"/new/" + newsapi._id + newsapi.title}
