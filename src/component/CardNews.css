@@ -34,12 +34,13 @@ a:hover {
 .cardContainer {
   display: inline-block;
   margin: 10px;
-  background-color: var(--white);
+  background-color: #f5f5f5;
   width: 345px;
 }
 
 .cardContainer img {
   width: 100%;
+  background-color: #f5f5f5;
 }
 
 .categoria {

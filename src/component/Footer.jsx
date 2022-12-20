@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div className="bg-light">
-      <div className="container bg-light">
+    <div className="bg-warning">
+      <div className="container bg-warning text-dark">
         footer
       </div>
     </div>
