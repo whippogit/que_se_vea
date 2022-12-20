@@ -8,9 +8,9 @@ import Head from "./component/Head";
 import NavBar from "./component/NavBar";
 import PageNotFound from "./component/PageNotFound";
 import Social from "./component/Social";
-import BannerMain from "./component/BannerMain";
 import BannerLeft from "./component/BannerLeft";
 import Slider from "./component/Slider";
+import Footer from "./component/Footer";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -34,14 +34,8 @@ function App() {
         <Slider />
       </div>
 
-      <div className="container">
-        <BannerMain />
-      </div>
-
       <div className="row">
-        <div className="col-2">
-          <h1>hola</h1>
-        </div>
+        <div className="col-2"></div>
         <div className="col-7">
           <Router>
             <Routes>
@@ -51,10 +45,14 @@ function App() {
             </Routes>
           </Router>
         </div>
-        <div className="col-3">
+        <div className="col-2">
           <BannerLeft />
         </div>
+        <div className="col-1"></div>
       </div>
+      <hr />
+
+      <Footer />
     </div>
   );
 }

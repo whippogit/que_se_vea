@@ -7,7 +7,7 @@ function Slider() {
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="src/img/coca-nestle.jpg" class="d-block w-100" alt="..." />
+          <img src="src/img/banner-blanco.jpg" class="d-block w-100 rounded m-5" alt="..." />
         </div>
         <div class="carousel-item">
           <img src="src/img/corrientes_02.jpg" class="d-block w-50" alt="..." />
