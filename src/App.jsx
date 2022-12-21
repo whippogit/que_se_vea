@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="container d-flex justify-content-between">
-        <Head />
+        <Head/>
         <Social />
       </h1>
       <hr />
@@ -51,8 +51,10 @@ function App() {
         <div className="col-1"></div>
       </div>
       <hr />
-
-      <Footer />
+      <div className="bg-footer">
+        <Footer news={news} />
+      </div>
+      <div className="bg-dark text-light text-center">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a className="bg-dark text-warning" href="#" target="_blank">whippo.com</a></div>
     </div>
   );
 }
