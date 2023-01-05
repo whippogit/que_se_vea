@@ -1,0 +1,16 @@
+.title{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pBanner {
+    font-size: 10px;
+}
+
+.hrBanner{
+    margin-bottom: 5px;
+}

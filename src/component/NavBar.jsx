@@ -1,6 +1,7 @@
 import DateFormat from "./DateFormat";
+import Search from "./Search";
 
-function NavBar() {
+function NavBar({ handleSearch }) {
   return (
     <>
       <nav className="container-fluid navbar">
@@ -29,6 +30,9 @@ function NavBar() {
                 Internacional
               </a>
             </div>
+          </div>
+          <div>
+            <Search handleSearch={handleSearch} />
           </div>
           <div className="fs-5 text-end">
             <DateFormat />

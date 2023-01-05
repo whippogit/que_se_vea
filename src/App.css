@@ -22,3 +22,11 @@
 hr {
   margin: 3px;
 }
+
+.txt-size {
+  font-size: 10px;
+}
+
+.z-index {
+  z-index: 50;
+}

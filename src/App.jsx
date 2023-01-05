@@ -11,6 +11,7 @@ import Social from "./component/Social";
 import BannerLeft from "./component/BannerLeft";
 import Slider from "./component/Slider";
 import Footer from "./component/Footer";
+import Copyright from "./component/Copyright";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -19,17 +20,36 @@ function App() {
     Api.getAllNews().then(setNews);
   }, []);
 
+  const [search, setSearch] = useState([]);
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
+  //filter
+  let results = [];
+  if (search === undefined) {
+    results = news;
+  } else {
+    results = news.filter((news) =>
+      news.description.toLowerCase().includes(search)
+    );
+  }
+
   return (
     <div className="App">
-      <h1 className="container d-flex justify-content-between">
-        <Head/>
-        <Social />
-      </h1>
-      <hr />
-      <div className="container-fluid">
-        <NavBar />
+      <div>
+        <h1 className="container d-flex justify-content-between">
+          <Head />
+          <Social />
+        </h1>
+
+        <hr />
+        <div className="container-fluid">
+          <NavBar handleSearch={handleSearch} />
+        </div>
+        <hr />
       </div>
-      <hr />
       <div className="container">
         <Slider />
       </div>
@@ -39,14 +59,14 @@ function App() {
         <div className="col-7">
           <Router>
             <Routes>
-              <Route path="/" element={<CardNews news={news} />} />
+              <Route path="/" element={<CardNews news={results} />} />
               <Route path="/new/:id" element={<PageDetails />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
           </Router>
         </div>
         <div className="col-2">
-          <BannerLeft />
+          <BannerLeft news={news}/>
         </div>
         <div className="col-1"></div>
       </div>
@@ -54,7 +74,9 @@ function App() {
       <div className="bg-footer">
         <Footer news={news} />
       </div>
-      <div className="bg-dark text-light text-center">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a className="bg-dark text-warning" href="#" target="_blank">whippo.com</a></div>
+      <div className="bg-dark text-light text-center txt-size">
+        <Copyright />
+      </div>
     </div>
   );
 }
