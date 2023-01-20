@@ -9,7 +9,7 @@ function Footer({ news }) {
           <a>
             <img
               className="img-logo-footer"
-              src="src/img/logoSL.png"
+              src="/src/img/logoSL.png"
               title="Corrientes Gradual"
             />
           </a>

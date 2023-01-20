@@ -5,7 +5,7 @@ function BannerMain() {
         <figcaption class="figure-caption text-top text-center text-bg-dark">
           Publicidad
         </figcaption>
-        <img className="rounded w-25 mx-auto d-block" src="src/img/redes_gob_900x300px.gif" />
+        <img className="rounded w-25 mx-auto d-block" src="/src/img/redes_gob_900x300px.gif" />
       </figure>
     </div>
   );

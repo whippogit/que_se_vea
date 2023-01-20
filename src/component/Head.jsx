@@ -6,7 +6,7 @@ function Head() {
       <a>
         <img
           className="logo"
-          src="src/img/logo.png"
+          src="/src/img/logo.png"
           title="Corrientes Gradual"
         />
       </a>

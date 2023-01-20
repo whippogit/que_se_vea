@@ -9,7 +9,7 @@ function NavBar({ handleSearch }) {
           <div>
             <div>
               <a className="navbar-brand fs-6" href="#">
-                Últimas Noticias
+                Todas las Noticias
               </a>
               <a className="navbar-brand fs-6" href="#">
                 Política
@@ -27,7 +27,7 @@ function NavBar({ handleSearch }) {
                 Deporte
               </a>
               <a className="navbar-brand fs-6" href="#">
-                Internacional
+                Turismo
               </a>
             </div>
           </div>

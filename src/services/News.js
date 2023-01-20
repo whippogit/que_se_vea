@@ -1,8 +1,8 @@
-const Api = "https://appwhippo.onrender.com/api";
+const url = "http://localhost:3000/api";
 
 export async function getAllNews() {
   try {
-    const response = await fetch(`${Api}`);
+    const response = await fetch(`${url}/noticias`);
     const data = await response.json();
     console.log(data.results);
     return data.results.reverse();
@@ -11,11 +11,12 @@ export async function getAllNews() {
   }
 }
 
-export async function getNewsByTitle(title) {
+export async function getNewsById(id) {
   try {
-    const response = await fetch(`${Api}/${title}`);
-    const data = await response.json();
-    return data;
+    const response = await fetch(`${url}/noticias/${id}`);
+    const peticion = await response.json();
+    console.log(peticion.noticia);
+    return peticion.noticia;
   } catch (error) {
     console.log(error);
   }

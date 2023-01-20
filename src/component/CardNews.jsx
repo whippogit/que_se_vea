@@ -6,7 +6,8 @@ function CardNews({ news }) {
     <div className="container p-0">
       {news.map((newsapi) => (
         <Link
-          to={"/new/" + newsapi._id + newsapi.title}
+          reloadDocument
+          to={`/noticias/${newsapi._id}`}
           key={newsapi._id}
           title={newsapi.title}
           className="cardContainer align-top"

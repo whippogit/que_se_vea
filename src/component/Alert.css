@@ -1,16 +1,21 @@
 .title{
     font-size: 13px;
     font-weight: bold;
+    
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.pBanner {
+.pAlert {
     font-size: 10px;
 }
 
-.hrBanner{
+.hrAlert{
     margin-bottom: 5px;
+}
+
+.backAlert {
+    background-color: red;
 }
