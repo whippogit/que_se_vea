@@ -4,9 +4,9 @@ import SocialFooter from "./SocialFooter";
 function Footer({ news }) {
   return (
     <div className="container bg-socialFooter">
-      <div className="row">
+      <div className="row bg-footer">
         <div className="col-4 fs-1 bg-footer d-flex justify-content-center">
-          <a>
+          <a className="bg-footer">
             <img
               className="img-logo-footer"
               src="/src/img/logoSL.png"
@@ -14,7 +14,7 @@ function Footer({ news }) {
             />
           </a>
         </div>
-        <div className="col-8 bg-footer">
+        <div className="col-8 bg-footer d-none d-sm-block">
           {news.map((newsapi) => (
             <ul className="tags d-inline text-dark bg-footer" key={newsapi._id}>
               <li className="d-inline bg-footer">{newsapi.category}</li>

@@ -1,4 +1,4 @@
-const ApiAlert = "http://localhost:4000/api";
+const ApiAlert = "https://whippoalert.onrender.com/api";
 
 export async function getAllAlerts() {
   try {

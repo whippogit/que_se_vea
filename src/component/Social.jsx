@@ -3,7 +3,7 @@ import "./Social.css";
 function Social() {
   return (
     <>
-      <div className="align-middle">
+      <div className="align-middle d-none d-sm-block">
         <i className="bx bxl-facebook"></i>
         <i className="bx bxl-instagram"></i>
         <i className="bx bxl-twitter"></i>

@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api";
+const url = "https://appwhippo.onrender.com/api";
 
 export async function getAllNews() {
   try {

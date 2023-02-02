@@ -3,7 +3,7 @@ import "./Head.css";
 function Head() {
   return (
     <>
-      <a>
+      <a href="/">
         <img
           className="logo"
           src="/src/img/logo.png"

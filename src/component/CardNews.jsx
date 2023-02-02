@@ -21,7 +21,7 @@ function CardNews({ news }) {
           <div className="footer-card">
             <div className="by">Dirección de Información Pública</div>
           </div>
-          <div className="date">11 de Diciembre 2022</div>
+          
         </Link>
       ))}
       ,

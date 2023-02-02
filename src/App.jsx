@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="fixed-top">
         <h1 className="container d-flex justify-content-between">
           <Head />
           <Social />
@@ -60,12 +60,12 @@ function App() {
         </div>
         <hr />
       </div>
-      <div className="container">
+      <div className="container mtS">
         <Slider />
       </div>
 
       <div className="row">
-        <div className="col-2"></div>
+        <div className="col-2 d-none d-sm-block"></div>
         <div className="col-7">
           <Router>
             <Routes>
@@ -75,13 +75,11 @@ function App() {
             </Routes>
           </Router>
         </div>
-        <div className="col-2">
+        <div className="col-2 d-none d-sm-block">
           <Alert alerts={alerts} />
         </div>
-        <div className="col-1"></div>
       </div>
-      
-      
+
       <hr />
       <div className="bg-footer">
         <Footer news={news} />
