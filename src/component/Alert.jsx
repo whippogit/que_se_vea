@@ -19,8 +19,8 @@ function Alert({ alerts }) {
         ))}
       </ul>
 
-      <img src="/src/img/ctes2030-250x100.gif" className="w-75 m-2 rounded" />
-      <img src="/src/img/08 250x100.gif" className="w-75 m-2 rounded" />
+      <img src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1675546464/08_250x100_tnehld.gif" className="w-75 m-2 rounded" />
+      <img src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1675546465/ctes2030-250x100_hwnabw.gif" className="w-75 m-2 rounded" />
     </>
   );
 }

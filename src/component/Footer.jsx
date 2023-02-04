@@ -9,7 +9,7 @@ function Footer({ news }) {
           <a className="bg-footer">
             <img
               className="img-logo-footer"
-              src="/src/img/logoSL.png"
+              src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1675546463/logoSL_y2bmh0.png"
               title="Corrientes Gradual"
             />
           </a>
