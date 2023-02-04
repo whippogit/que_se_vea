@@ -8,7 +8,7 @@ function Alert({ alerts }) {
           <div key={alertsapi._id}>
             <div>
               <a href="https://www.dpec.com.ar/" target="blank">
-                <img className="w-100" src="/src/img/dpec.jpg" alt="dpec" />
+                <img className="w-100" src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1675545999/dpec_zg6nhp.jpg" alt="dpec" />
               </a>
 
               <div className="title text-danger">{alertsapi.title}</div>
