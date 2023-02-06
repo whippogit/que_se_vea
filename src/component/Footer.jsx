@@ -12,6 +12,11 @@ function Footer({ news }) {
               src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1675546463/logoSL_y2bmh0.png"
               title="Corrientes Gradual"
             />
+            <img
+              className="img-logo-footer-whippo"
+              src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1675725293/Logo_Whippo_ji0tjz.png"
+              title="Corrientes Gradual"
+            />
           </a>
         </div>
         <div className="col-8 bg-footer d-none d-sm-block">
