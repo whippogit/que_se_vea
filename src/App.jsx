@@ -11,7 +11,6 @@ import PageNotFound from "./component/PageNotFound";
 import Social from "./component/Social";
 import Alert from "./component/Alert";
 import Slider from "./component/Slider";
-import BannerBottom from "./component/BannerBottom";
 import Footer from "./component/Footer";
 import Copyright from "./component/Copyright";
 
