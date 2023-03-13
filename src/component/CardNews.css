@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Palet Colours*/
@@ -28,7 +28,8 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: var(--yellow);
+  color: #e51538;
+  
 }
 
 .cardContainer {
@@ -45,14 +46,15 @@ a:hover {
 
 .categoria {
   margin-top: 1rem;
+  
 }
 
 h6 {
   display: inline-block;
-  padding: 0.5rem 2rem;
-  background-color: var(--yellow);
-  color: var(--black);
-  text-decoration: underlines;
+  padding: 0.5rem 0rem;
+  font-size: 12px;
+  color: #e51538;
+  text-decoration: underline;
 }
 
 .titulo {

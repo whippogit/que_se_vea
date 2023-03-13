@@ -11,7 +11,7 @@
   }
 
 .logo {
-    width: 200px;
+    width: 150px;
     margin: 20px;
 }
 
@@ -21,4 +21,8 @@ box-icon {
 
 box-icon:hover {
     color: var(--yellow);
+}
+
+.banner-ctes {
+    width: 300px;
 }
