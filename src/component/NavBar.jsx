@@ -8,7 +8,7 @@ function NavBar({ handleSearch }) {
         <div className="container bg-danger">
           <div className="bg-danger m-0">
             <div className="bg-danger">
-              <a className="navbar-brand fs-6 bg-danger text-dark" href="#">
+              <a className="navbar-brand fs-6 bg-danger text-dark" href="/">
                 Inicio
               </a>
               <a className="navbar-brand fs-6 bg-danger text-dark" href="#">

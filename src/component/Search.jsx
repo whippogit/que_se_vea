@@ -4,7 +4,7 @@ function Search({ handleSearch }) {
       <input
         type="text"
         placeholder="Buscar"
-        className="form-control text-secondary bg-dark"
+        className="form-control"
         onChange={handleSearch}
       />
     </div>

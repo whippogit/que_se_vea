@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="fixed-top">
+      <div className="fixed-top bg-white">
         <div className=" m-0">
           <NavBar handleSearch={handleSearch} />
         </div>
@@ -62,7 +62,9 @@ function App() {
       <hr />
 
       <div className="row">
-        <div className="col-2 d-none d-sm-block"></div>
+        <div className="col-2 d-none d-sm-block bg-publicidad config-publicidad">
+          publicidad
+        </div>
         <div className="col-7">
           <Router>
             <Routes>
@@ -72,7 +74,7 @@ function App() {
             </Routes>
           </Router>
         </div>
-        <div className="col-2 d-none d-sm-block">
+        <div className="col-2 d-none d-sm-block fixed-top config-alert">
           <Alert alerts={alerts} />
         </div>
       </div>

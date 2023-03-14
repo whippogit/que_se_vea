@@ -1,7 +1,7 @@
 import React from "react";
 
 function Copyright() {
-  return <>Copyright-derechos reservados-quesevea.com</>;
+  return <>© 2023 queseveacorrientes.com, Inc. All rights reserved.</>;
 }
 
 export default Copyright;

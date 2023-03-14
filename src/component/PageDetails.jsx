@@ -20,16 +20,23 @@ function PageDetails() {
       <p className="text-secondary text-decoration-underline">
         {noticia.category}
       </p>
-      <div className="text-center">
-        <img className="w-50 p-4" src={noticia.image_url} alt={noticia.title} />
+      <div className="row">
+        <div className="col-7">
+          <hr />
+          <h1 className="text-start">{noticia.title}</h1>
+
+          <hr />
+          <p className="text-secondary fs-5">{noticia.description}</p>
+          <p className="lh-lg text-start fs-5 textoP">{noticia.content}</p>
+        </div>
+        <div className="text-center col-5">
+          <img
+            className="w-100 fixed"
+            src={noticia.image_url}
+            alt={noticia.title}
+          />
+        </div>
       </div>
-
-      <hr />
-      <h1 className="text-start">{noticia.title}</h1>
-
-      <hr />
-      <p className="text-secondary fs-5 p-5">{noticia.description}</p>
-      <p className="lh-lg text-start fs-5 p-5 textoP">{noticia.content}</p>
     </div>
   );
 }
