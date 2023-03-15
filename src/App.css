@@ -31,8 +31,8 @@ hr {
   z-index: 50;
 }
 
-.mtS{
-  margin-top: 280px;
+.mtS {
+  margin-top: 350px;
 }
 
 .fondo-transparente {
@@ -52,6 +52,16 @@ hr {
 }
 
 .config-alert {
-  margin-top: 420px;
+  margin-top: 500px;
   margin-left: 1450px;
+}
+
+.logo {
+  font-family: "Audiowide", sans-serif;
+  font-size: 15px;
+}
+
+.icono-placeholder::placeholder {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
 }

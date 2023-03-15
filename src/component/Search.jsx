@@ -1,10 +1,11 @@
 function Search({ handleSearch }) {
   return (
-    <div>
+    <div className="fondo-transparente mt-5">
+      
       <input
         type="text"
-        placeholder="Buscar"
-        className="form-control"
+        placeholder=""
+        className="form-control icono-placeholder"
         onChange={handleSearch}
       />
     </div>

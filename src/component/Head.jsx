@@ -1,26 +1,32 @@
 import "./Head.css";
+import DateFormat from "./DateFormat";
+import Search from "./Search";
+import Redes from "./Redes";
 
-function Head() {
+function Head({ handleSearch }) {
   return (
     <>
-      <a href="/" className="fondo-transparente row">
-        <div className="col-10 fondo-transparente">
+      <div className="fondo-transparente">
+        <Redes />
+      </div>
+      <div className="fondo-transparente mb-3">
+        <a
+          href="/"
+          className="fondo-transparente d-flex justify-content-center"
+        >
           <img
             className="logo fondo-transparente"
             src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1678733570/logo-queSeVea_ennvt0.png"
             title="que se vea"
           />
+        </a>
+        <div className="fs-5 text-end fondo-transparente">
+          <DateFormat />
         </div>
-
-        <div className="col-2 fondo-transparente">
-          <img
-            src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1677775249/logo-corrientes_rzqz0i.png"
-            alt="corrintes somos todos"
-            className="banner-ctes mt-4 fondo-transparente"
-            title="corrintes somos todos"
-          />
-        </div>
-      </a>
+      </div>
+      <form className="fondo-transparente">
+        <Search handleSearch={handleSearch} />
+      </form>
     </>
   );
 }

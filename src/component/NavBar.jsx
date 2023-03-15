@@ -1,15 +1,12 @@
-import DateFormat from "./DateFormat";
-import Search from "./Search";
-
-function NavBar({ handleSearch }) {
+function NavBar() {
   return (
     <>
       <nav className="navbar bg-danger">
-        <div className="container bg-danger">
+        <div className="container bg-danger d-flex justify-content-center">
           <div className="bg-danger m-0">
             <div className="bg-danger">
               <a className="navbar-brand fs-6 bg-danger text-white" href="/">
-                Inicio
+                Portada
               </a>
               <a className="navbar-brand fs-6 bg-danger text-white" href="#">
                 Política
@@ -30,12 +27,6 @@ function NavBar({ handleSearch }) {
                 Turismo
               </a>
             </div>
-          </div>
-          <div>
-            <Search handleSearch={handleSearch} />
-          </div>
-          <div className="fs-5 text-end">
-            <DateFormat />
           </div>
         </div>
       </nav>
