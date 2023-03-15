@@ -24,7 +24,7 @@ hr {
 }
 
 .txt-size {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .z-index {
@@ -52,7 +52,7 @@ hr {
 }
 
 .config-alert {
-  margin-top: 500px;
+  margin-top: 477px;
   margin-left: 1450px;
 }
 
@@ -64,4 +64,8 @@ hr {
 .icono-placeholder::placeholder {
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
+}
+
+.mb-config {
+  margin-bottom: 100px;
 }

@@ -19,3 +19,7 @@ a:hover {
 .backAlert {
     background-color: red;
 }
+
+li {
+    list-style: none;
+}

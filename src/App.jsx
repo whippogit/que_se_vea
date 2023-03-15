@@ -86,12 +86,12 @@ function App() {
           <Alert alerts={alerts} />
         </div>
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center mb-config">
         <BannerBottom />
       </div>
 
-      <hr />
-      <div className="bg-danger">
+      
+      <div className="bg-dark">
         <Footer news={news} />
       </div>
       <div className="bg-dark text-light text-center txt-size">
