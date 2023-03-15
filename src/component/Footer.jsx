@@ -13,7 +13,7 @@ function Footer() {
           />
         </div>
 
-        <div className="col-2 fondo-transparente mb-3 text-white">
+        <div className="col-2 fondo-transparente mb-3 text-white d-none d-sm-block">
           <Redes />
         </div>
       </div>

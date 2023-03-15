@@ -50,7 +50,7 @@ function App() {
         <div className="container d-flex justify-content-between fondo-transparente">
           <Head handleSearch={handleSearch} />
         </div>
-        <div className=" m-0">
+        <div className="m-0 d-none d-sm-block">
           <NavBar />
         </div>
         <div className="fondo-transparente d-flex justify-content-center">

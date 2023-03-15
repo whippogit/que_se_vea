@@ -6,7 +6,7 @@ import Redes from "./Redes";
 function Head({ handleSearch }) {
   return (
     <>
-      <div className="fondo-transparente">
+      <div className="fondo-transparente d-none d-sm-block">
         <Redes />
       </div>
       <div className="fondo-transparente mb-3">
@@ -24,7 +24,7 @@ function Head({ handleSearch }) {
           <DateFormat />
         </div>
       </div>
-      <form className="fondo-transparente">
+      <form className="fondo-transparente d-none d-sm-block">
         <Search handleSearch={handleSearch} />
       </form>
     </>
