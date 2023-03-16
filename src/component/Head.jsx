@@ -16,11 +16,11 @@ function Head({ handleSearch }) {
         >
           <img
             className="logo fondo-transparente"
-            src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1678733570/logo-queSeVea_ennvt0.png"
+            src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1678999958/quesevea-q_zhugsf.png"
             title="que se vea"
           />
         </a>
-        <div className="fs-5 text-end fondo-transparente">
+        <div className="fs-5 text-center fondo-transparente">
           <DateFormat />
         </div>
       </div>

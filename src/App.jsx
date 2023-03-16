@@ -86,16 +86,18 @@ function App() {
           <Alert alerts={alerts} />
         </div>
       </div>
-      <div className="d-flex justify-content-center mb-config">
-        <BannerBottom />
-      </div>
 
-      
-      <div className="bg-dark">
-        <Footer news={news} />
-      </div>
-      <div className="bg-dark text-light text-center txt-size">
-        <Copyright />
+      <div className="d-none d-sm-block">
+        <div className="d-flex justify-content-center mb-config">
+          <BannerBottom />
+        </div>
+        
+        <div className="bg-dark">
+          <Footer news={news} />
+        </div>
+        <div className="bg-dark text-light text-center txt-size">
+          <Copyright />
+        </div>
       </div>
     </div>
   );
