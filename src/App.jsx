@@ -64,7 +64,7 @@ function App() {
         <hr />
         <hr />
       </div>
-      <div className="container bg-publicidad mtS config-publicidad">
+      <div className="bg-publicidad mtS config-publicidad">
         publicidad
       </div>
       <hr />
