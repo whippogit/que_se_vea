@@ -73,7 +73,7 @@ function App() {
           </Router>
         </div>
         <div className="col-2 d-none d-sm-block fixed-top config-alert fondo-transparente">
-          <Alert alerts={alerts} />
+          <Alert />
         </div>
       </div>
 
