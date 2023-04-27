@@ -1,6 +1,5 @@
 import "./App.css";
 import * as Api from "./services/News";
-import * as ApiAlert from "./services/Alerts";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CardNews from "./component/CardNews";
@@ -19,13 +18,6 @@ function App() {
 
   useEffect(() => {
     Api.getAllNews().then(setNews);
-  }, []);
-
-  //Alerts
-  const [alerts, setAlerts] = useState([]);
-
-  useEffect(() => {
-    ApiAlert.getAllAlerts().then(setAlerts);
   }, []);
 
   const [search, setSearch] = useState([]);
@@ -64,9 +56,7 @@ function App() {
         <hr />
         <hr />
       </div>
-      <div className="bg-publicidad mtS config-publicidad">
-        publicidad
-      </div>
+      <div className="bg-publicidad mtS config-publicidad">publicidad</div>
       <hr />
 
       <div className="row">
@@ -91,7 +81,7 @@ function App() {
         <div className="d-flex justify-content-center mb-config">
           <BannerBottom />
         </div>
-        
+
         <div className="bg-dark">
           <Footer news={news} />
         </div>
