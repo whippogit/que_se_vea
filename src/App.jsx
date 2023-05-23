@@ -47,8 +47,8 @@ function App() {
         </div>
         <div className="fondo-transparente d-flex justify-content-center">
           <img
-            src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1684015468/unnamed_uhzytk.jpg"
-            alt="corrintes somos todos"
+            src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1677775249/logo-corrientes_rzqz0i.png"
+            alt="corrientes somos todos"
             className="banner-ctes mt-4 fondo-transparente"
             title="corrientes somos todos"
           />
@@ -56,12 +56,12 @@ function App() {
         <hr />
         <hr />
       </div>
-      <div className="bg-publicidad mtS config-publicidad">publicidad</div>
+      <div className="bg-publicidad mtS config-publicidad">Publicidad</div>
       <hr />
 
       <div className="row">
         <div className="col-2 d-none d-sm-block bg-publicidad config-publicidad">
-          publicidad
+         Publicidad 
         </div>
         <div className="col-7">
           <Router>
