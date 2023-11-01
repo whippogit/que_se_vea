@@ -36,7 +36,8 @@ a:hover {
   display: inline-block;
   margin: 10px;
   background-color: #f5f5f5;
-  width: 345px;
+  min-width: 410px;
+  max-width: 410px;
 }
 
 .cardContainer img {
@@ -81,21 +82,4 @@ h6 {
   color: #b9b9b9;
 }
 
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
-}
 
-/* Style your items */
-.my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
-}

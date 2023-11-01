@@ -8,9 +8,8 @@ import Head from "./component/Head";
 import NavBar from "./component/NavBar";
 import PageNotFound from "./component/PageNotFound";
 import BannerBottom from "./component/BannerBottom";
-import Alert from "./component/Alert";
+
 import Footer from "./component/Footer";
-import Copyright from "./component/Copyright";
 
 function App() {
   //allNews
@@ -38,57 +37,41 @@ function App() {
 
   return (
     <div className="App">
-      <div className="fixed-top bg-white">
-        <div className="container d-flex justify-content-between fondo-transparente">
+      <header className="fixed-top bg-white">
+        <div className="d-flex justify-content-center">
           <Head handleSearch={handleSearch} />
         </div>
         <div className="m-0 d-none d-sm-block">
           <NavBar />
         </div>
-        <div className="fondo-transparente d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
           <img
             src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1677775249/logo-corrientes_rzqz0i.png"
             alt="corrientes somos todos"
-            className="banner-ctes mt-4 fondo-transparente"
+            className="banner-ctes mt-4"
             title="corrientes somos todos"
           />
         </div>
-        <hr />
-        <hr />
-      </div>
-      <div className="bg-publicidad mtS config-publicidad">Publicidad</div>
-      <hr />
+      </header>
 
-      <div className="row">
-        <div className="col-2 d-none d-sm-block bg-publicidad config-publicidad">
-         Publicidad 
-        </div>
-        <div className="col-7">
-          <Router>
-            <Routes>
-              <Route path="/" element={<CardNews news={results} />} />
-              <Route path="/noticias/:id" element={<PageDetails />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-          </Router>
-        </div>
-        <div className="col-2 d-none d-sm-block fixed-top config-alert fondo-transparente">
-          <Alert />
-        </div>
-      </div>
+      <main className="mtS">
+        <Router>
+          <Routes>
+            <Route path="/" element={<CardNews news={results} />} />
+            <Route path="/noticias/:id" element={<PageDetails />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </Router>
+      </main>
 
-      <div className="d-none d-sm-block">
-        <div className="d-flex justify-content-center mb-config">
+      <section>
+        <div className="d-flex justify-content-center">
           <BannerBottom />
         </div>
-
+        </section>
         <div className="bg-dark">
-          <Footer news={news} />
+          <Footer/>
         </div>
-        <div className="bg-dark text-light text-center txt-size">
-          <Copyright />
-        </div>
-      </div>
     </div>
   );
 }

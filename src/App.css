@@ -15,6 +15,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: #f5f5f5;
   font-family: "Montserrat", sans-serif;
 }
@@ -35,30 +38,9 @@ hr {
   margin-top: 350px;
 }
 
-.fondo-transparente {
-  background-color: transparent;
-}
-
-.bg-publicidad {
-  background-color: #e5e3e3;
-}
-
-.config-publicidad {
-  margin-bottom: 30px;
-  color: #808080;
-  padding: 40px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.config-alert {
-  margin-top: 477px;
-  margin-left: 1450px;
-}
-
 .logo {
   font-family: "Audiowide", sans-serif;
-  font-size: 15px;
+  
 }
 
 .icono-placeholder::placeholder {
@@ -66,6 +48,9 @@ hr {
   font-weight: 600;
 }
 
-.mb-config {
-  margin-bottom: 100px;
+
+
+.img-buttom {
+  max-width: 410px;
+  min-width: 410px;
 }
