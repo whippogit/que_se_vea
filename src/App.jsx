@@ -44,6 +44,8 @@ function App() {
         <div className="m-0 d-none d-sm-block">
           <NavBar />
         </div>
+      </header>
+      <section className="mtS">
         <div className="d-flex justify-content-center">
           <img
             src="https://res.cloudinary.com/dm4wfkipp/image/upload/v1677775249/logo-corrientes_rzqz0i.png"
@@ -52,9 +54,9 @@ function App() {
             title="corrientes somos todos"
           />
         </div>
-      </header>
+      </section>
 
-      <main className="mtS">
+      <section className="container">
         <Router>
           <Routes>
             <Route path="/" element={<CardNews news={results} />} />
@@ -62,16 +64,16 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Router>
-      </main>
+      </section>
 
-      <section>
+      <section className="container">
         <div className="d-flex justify-content-center">
           <BannerBottom />
         </div>
-        </section>
-        <div className="bg-dark">
-          <Footer/>
-        </div>
+      </section>
+      <div className="bg-dark">
+        <Footer />
+      </div>
     </div>
   );
 }

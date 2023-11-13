@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CardNews({ news }) {
   return (
-    <div className="container">
+    <>
       {news.map((newsapi) => (
         <Link
           reloadDocument
@@ -21,7 +21,7 @@ function CardNews({ news }) {
         </Link>
       ))}
       ,
-    </div>
+    </>
   );
 }
 
