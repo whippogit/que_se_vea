@@ -20,7 +20,7 @@ function CardNews({ news }) {
           
         </Link>
       ))}
-      ,
+      
     </>
   );
 }
